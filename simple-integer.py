@@ -4,13 +4,16 @@ import threading
 import Queue
 import random
 
-generation = 0
-population = 10
-reproductionRate = 3
+#Configurables:
+population = 50
+reproductionRate = 25
 target = 83
-maxVal = 100
-minVal = -100
-mutationFactor = 5
+maxVal = 5000
+minVal = -5000
+mutationFactor = 20
+###############
+
+generation = 0
 
 def problem(value):
 	return abs(target - value)
